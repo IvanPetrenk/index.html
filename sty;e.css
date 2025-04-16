@@ -1,0 +1,108 @@
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(19, 19, 19);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.left-block {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.store-name {
+    font-size: 24px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(19, 19, 19);
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+nav a:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+p{
+  color: white;  
+}
+h2{
+  color: white;  
+}
+
+
+
+
+main {
+    padding-top: 120px;
+    text-align: center;
+}
+.reviews {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.review {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.review:hover {
+  transform: scale(1.02);
+}
+
+.review h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.review p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
