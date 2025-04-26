@@ -76,46 +76,70 @@ h2{
   text-align: center;
 }
 
-.img-container {
+    : 0;
+    padding: 0;}
+
+.cakes-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cake-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cake-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
 }
 
-.img-wrapper {
+.cake-wrapper {
     position: relative;
-    width: fit-content;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
-.img {
-    width: 415px;
-    border: 10px double white;
-    border-radius: 10px;
+.cake-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
+    border-radius: 12px;
 }
 
-.img:hover {
+.cake-wrapper:hover .cake-img {
     transform: scale(1.05);
 }
 
-.ingredients {
+.cake-info {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    opacity: 0;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    border-radius: 10px;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.burger-wrapper:hover .ingredients {
+.cake-wrapper:hover .cake-info {
     opacity: 1;
 }
