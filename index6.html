@@ -31,15 +31,7 @@
       const audio = document.createElement('audio');
       audio.src = 'https://files.catbox.moe/6z2u0h.mp3';
 
-      img.onclick = () => {
-        audio.currentTime = 0; // каждый раз с начала
-        audio.play();
-      };
 
-      wrapper.appendChild(img);
-      wrapper.appendChild(audio);
-      document.currentScript.parentElement.appendChild(wrapper);
-    }
   </script>
 </div>
 
