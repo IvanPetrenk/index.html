@@ -14,9 +14,33 @@
         </nav>
     </div>
 </header>
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <img src="https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif" alt="Rickroll" style="width: 70%;">
-   </div> 
-   <audio src="https://www.myinstants.com/media/sounds/rickroll.mp3" autoplay loop></audio>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <!-- 100 гифок с индивидуальным звуком -->
+  <script>
+    for (let i = 0; i < 100; i++) {
+      const wrapper = document.createElement('div');
+      wrapper.style.display = 'flex';
+      wrapper.style.flexDirection = 'column';
+      wrapper.style.alignItems = 'center';
+
+      const img = document.createElement('img');
+      img.src = 'https://media.tenor.com/9zT0s2gE2-YAAAAd/rick-astley-dance.gif';
+      img.style.width = '100px';
+      img.style.cursor = 'pointer';
+
+      const audio = document.createElement('audio');
+      audio.src = 'https://files.catbox.moe/6z2u0h.mp3';
+
+      img.onclick = () => {
+        audio.currentTime = 0; // каждый раз с начала
+        audio.play();
+      };
+
+      wrapper.appendChild(img);
+      wrapper.appendChild(audio);
+      document.currentScript.parentElement.appendChild(wrapper);
+    }
+  </script>
+</div>
 
 </body>
