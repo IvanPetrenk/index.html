@@ -1,38 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кавун Рикролл</title>
+  <link href="style6.css" rel="stylesheet" type="text/css" />
+</head>
 <body>
 
 <header>
-    <div class="header-container">
-        <link href="style6.css" rel="stylesheet" type="text/css" />
-        <img src="https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif" alt="Логотип" class="logo">
-        <h1 class="store-name">Кавун</h1>
-        <nav>
-            <a href="index.html">Rickroll</a>
-            <a href="index.html">Rickroll</a>
-            <a href="index.html">Rickroll</a>
-            <a href="index.html">Rickroll</a>
-            <a href="index.html">Rickroll</a>
-        </nav>
-    </div>
+  <div class="header-container">
+    <img src="https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif" alt="Логотип" class="logo">
+    <h1 class="store-name">Кавун</h1>
+    <nav>
+      <a href="index.html">Rickroll</a>
+      <a href="index.html">Rickroll</a>
+      <a href="index.html">Rickroll</a>
+      <a href="index.html">Rickroll</a>
+      <a href="index.html">Rickroll</a>
+    </nav>
+  </div>
 </header>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-  <!-- 100 гифок с индивидуальным звуком -->
-  <script>
-    for (let i = 0; i < 100; i++) {
-      const wrapper = document.createElement('div');
-      wrapper.style.display = 'flex';
-      wrapper.style.flexDirection = 'column';
-      wrapper.style.alignItems = 'center';
 
-      const img = document.createElement('img');
-      img.src = 'https://media.tenor.com/9zT0s2gE2-YAAAAd/rick-astley-dance.gif';
-      img.style.width = '100px';
-      img.style.cursor = 'pointer';
+<main>
+  <div class="rickroll-grid" id="rickrollContainer"></div>
+</main>
 
-      const audio = document.createElement('audio');
-      audio.src = 'https://files.catbox.moe/6z2u0h.mp3';
-
-
-  </script>
-</div>
-
+<script src="script.js"></script>
 </body>
+</html>
